@@ -1,3 +1,5 @@
+const baseURL = 'https://api.github.com';
+
 function getIssues() {
   const repo ='chtompkins026/javascript-fetch-lab'
   const token = getToken()
