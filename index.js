@@ -34,7 +34,7 @@ function createIssue() {
     body: document.getElementById('body').value
   }
   const token = getToken()
-  fetch('https://api.github.com/repos/${repo}/issues/', {
+  fetch(url {
     method: 'post',
     body: JSON.stringify(data),
     headers: {
