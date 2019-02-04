@@ -34,7 +34,7 @@ function createIssue() {
     body: document.getElementById('body').value
   }
   const token = getToken()
-  fetch(url {
+  fetch(url, {
     method: 'post',
     body: JSON.stringify(data),
     headers: {
