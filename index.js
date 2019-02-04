@@ -32,16 +32,16 @@ function createIssue() {
   const data = {
     title: document.getElementById('title').value,
     body: document.getElementById('body').value
-  }
-  const token = getToken()
+  };
+  const token = getToken(); 
   fetch(url, {
     method: 'post',
     body: JSON.stringify(data),
     headers: {
       Authorization: `token ${token}`
     }
-  })
-  getIssues()
+  });
+  getIssues();
 }
 
 function showResults(json) {
