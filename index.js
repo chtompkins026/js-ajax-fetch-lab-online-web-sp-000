@@ -27,7 +27,7 @@ function showIssues(json) {
 }
 
 function createIssue() {
-  const repo ='chtompkins026/javascript-fetch-lab'
+  const repo =`${user}/js-ajax-fetch-lab`;
   const data = {
     title: document.getElementById('title').value,
     body: document.getElementById('body').value
