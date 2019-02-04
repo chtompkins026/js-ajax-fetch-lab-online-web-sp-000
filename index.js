@@ -51,7 +51,7 @@ function showResults(json) {
 function forkRepo() {
    const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   const url = `${baseURL}/repos/${repo}/forks`;
-  const token = getToken()
+  const token = getToken();
 
   fetch(`https://api.github.com/repos/${repo}/forks`, {
     method: 'post',
@@ -60,6 +60,6 @@ function forkRepo() {
     }
   })
   .then(res => res.json())
-  .then(json => showResults(json))
+  .then(json => showResults(json)); 
 }
 
